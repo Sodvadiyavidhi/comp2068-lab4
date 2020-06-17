@@ -1,0 +1,19 @@
+<%- include ('../partials/header') %>
+
+<div class="container my-5">
+  <!-- Add in your own product display -->
+  <header>
+    <h1><%= product.name %></h1>
+    <br>
+    <small>
+      <%= (blog.updatedAt.toLocaleString("en-CA")) %>
+    </small>
+  </header>
+  <hr>
+  <div class="description">
+    <%- product.description %>
+  </div>
+</div>
+</div>
+
+<%- include ('../partials/footer') %>
