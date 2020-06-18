@@ -1,20 +1,17 @@
 <%- include ('../partials/header') %>
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+  <link src="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+<body>
 <div class="container my-5">
   <!-- Add in your own product display -->
   <header>
     <h1>Product Name-<%= product.name %></h1>
   </header>
-  <div class="description">
-    <h2>Product Description-<%= product.Description %></h2>
-  </div>
-  <div class="price">
+    <h2>Product Description-<%= product.description %></h2>
     <h2>Product Price-<%= product.price %></h2>
-  </div>
 </div>
 </div>
+</body>
 
 <%- include ('../partials/footer') %>
