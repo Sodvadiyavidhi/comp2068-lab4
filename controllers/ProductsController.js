@@ -18,7 +18,8 @@ exports.new = (req, res) => {
 exports.create = async (req, res) => {
 try{
   const product = await Product.create(req.body);
-  res.redirect(`/products/show`);
+  console.log(req.body);
+  res.redirect(`/products/${product.id}`);
 }
 catch(err){
   console.log(err);

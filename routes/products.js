@@ -3,5 +3,5 @@ const { new: _new, index, show, create, edit, update, delete: _delete } = requir
 module.exports = router => {
   router.get('/products/new', _new);
   router.post('/products', create);
-  router.get('/products/show', show);
+  router.get('/products/:id', show);
 };
